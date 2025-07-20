@@ -2,15 +2,9 @@ import { useEffect, useState } from 'react';
 import { ScaleLoader } from 'react-spinners';
 import HomePage from './Pages/Home/HomePage';
 import './App.css';
-import 'animate.css';
-import WOW from 'wowjs';
 
 const App = () => {
 	const [loading, setLoading] = useState(false);
-
-	useEffect(() => {
-		new WOW.WOW({ live: false }).init();
-	}, []);
 	useEffect(() => {
 		setLoading(true);
 		const timer = setTimeout(() => {

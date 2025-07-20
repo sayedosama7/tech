@@ -38,27 +38,16 @@ const Services = () => {
 				<h2 className="text-center mb-4">Explore Our Services</h2>
 				<div className="row">
 					{projectData.map((proj, idx) => {
-						const delay = 0.2 + idx * 0.2;
-
 						return (
 							<div className="col-md-4 mb-4" key={idx}>
 								<div className="card h-100 shadow rounded-5 text-center p-3 border-0">
-									<div
-										className="fs-1 mb-3 wow animate__animated animate__fadeInUp"
-										data-wow-delay={`${delay}s`}
-									>
+									<div className="fs-1 mb-3 wow animate__animated animate__fadeInUp">
 										{proj.icon}
 									</div>
-									<h5
-										className="card-title wow animate__animated animate__fadeInUp"
-										data-wow-delay={`${delay + 0.2}s`}
-									>
+									<h5 className="card-title wow animate__animated animate__fadeInUp">
 										{proj.title}
 									</h5>
-									<p
-										className="card-text text-muted wow animate__animated animate__fadeInUp"
-										data-wow-delay={`${delay + 0.4}s`}
-									>
+									<p className="card-text text-muted wow animate__animated animate__fadeInUp">
 										{proj.desc}
 									</p>
 								</div>
