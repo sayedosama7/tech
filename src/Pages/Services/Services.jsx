@@ -33,7 +33,10 @@ const projectData = [
 
 const Services = () => {
 	return (
-		<section className="py-5 bg-light section-scroll-offset" id="services">
+		<section
+			className="py-5 mt-5 bg-light section-scroll-offset"
+			id="services"
+		>
 			<div className="container">
 				<h2 className="text-center mb-4">Explore Our Services</h2>
 				<div className="row">

@@ -2,7 +2,10 @@ import React from 'react';
 
 const HeroSection = () => {
 	return (
-		<div className="hero-section mt-5 pt-4">
+		<div
+			id="home"
+			className="hero-section d-flex flex-column justify-content-center align-items-center mt-5 pt-5"
+		>
 			<div className="container">
 				<div className="row">
 					<div className="col-md-6 mb-3 hero-section-caption d-flex flex-column justify-content-center align-items-lg-start align-items-center">

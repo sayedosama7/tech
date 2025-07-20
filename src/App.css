@@ -18,7 +18,7 @@ html {
 
 
 .who-we {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.719)), url(../public/about.jpg);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.719)), url(../about.jpg);
     height: 450px;
     background-position: center;
     background-size: cover;
@@ -48,6 +48,14 @@ html {
     margin: auto;
 }
 
+.active-link {
+    font-weight: bold;
+    color: #007bff !important;
+    border-bottom: 2px solid #007bff;
+    transition: all 0.3s ease-in-out;
+}
+
+
 .about-section .card {
     transition: transform 0.3s ease;
 }
@@ -66,6 +74,10 @@ html {
     position: relative;
 }
 
+.hero-section {
+    height: 500px;
+}
+
 @media(max-width:768px) {
     .hero-section p {
         text-align: center !important;
@@ -73,6 +85,10 @@ html {
 
     .hero-section-caption {
         align-items: center !important;
+    }
+
+    .hero-section {
+        height: auto;
     }
 
     .who-we {

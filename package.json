@@ -10,15 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.7",
     "dom": "^0.0.3",
+    "emailjs": "^4.0.3",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.7.0",
+    "react-scroll-to-top": "^3.1.0",
     "react-spinners": "^0.17.0",
+    "react-toastify": "^11.0.5",
     "router": "^2.2.0",
+    "scroll-to-top": "^1.1.0",
     "vite": "^5.4.19",
     "wowjs": "^1.1.3"
   },

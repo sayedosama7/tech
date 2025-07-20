@@ -1,6 +1,39 @@
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Contact = () => {
+	const form = useRef();
+
+	const sendEmail = e => {
+		e.preventDefault();
+		emailjs
+			.sendForm(
+				'service_22mtmwk',
+				'template_2qjjbx6',
+				form.current,
+				'Nvn5kxzKoS5VN4GHn'
+			)
+			.then(
+				result => {
+					console.log(result.text);
+					toast.success('Message sent successfully!');
+					e.target.reset();
+				},
+				error => {
+					console.log(error.text);
+					toast.error('Failed to send message. Please try again.');
+				}
+			);
+		e.target.reset();
+	};
+
 	return (
-		<section className="contact-section bg-light py-5 section-scroll-offset" id="contact">
+		<section
+			className="contact-section bg-light py-5 section-scroll-offset"
+			id="contact"
+		>
 			<div className="container">
 				<div className="text-center mb-5">
 					<h2 className="fw-bold">Contact Us</h2>
@@ -11,48 +44,13 @@ const Contact = () => {
 				</div>
 
 				<div className="row">
-					{/* Contact Info */}
-					{/* <div className="col-md-5 mb-4">
-						<h4 className="mb-4 fw-semibold">Get in Touch</h4>
-						<p>
-							<strong>Phone:</strong>{' '}
-							<a href="tel:01210304516">0123456789</a>
-						</p>
-						<p>
-							<strong>Email:</strong>{' '}
-							<a href="mailto:sayedosam9@gmail.com">
-								company@gmail.com
-							</a>
-						</p>
-						<p>
-							<strong>Address:</strong> Zagazig , Sharkia, Egypt
-						</p>
-						<div className="mt-4">
-							<h6 className="fw-semibold mb-2">Follow us:</h6>
-							<div className="d-flex gap-3">
-								<a href="#">
-									<i className="fab fa-facebook fa-lg"></i>
-								</a>
-								<a href="#">
-									<i className="fab fa-linkedin fa-lg"></i>
-								</a>
-								<a href="#">
-									<i className="fab fa-twitter fa-lg"></i>
-								</a>
-								<a href="#">
-									<i className="fab fa-github fa-lg"></i>
-								</a>
-							</div>
-						</div>
-					</div> */}
-
-					{/* Contact Form */}
 					<div className="col-md-8 m-auto">
-						<form>
+						<form ref={form} onSubmit={sendEmail}>
 							<div className="row">
 								<div className="col-md-6 mb-3">
 									<input
 										type="text"
+										name="user_name"
 										className="form-control"
 										placeholder="Your Name"
 										required
@@ -61,6 +59,7 @@ const Contact = () => {
 								<div className="col-md-6 mb-3">
 									<input
 										type="email"
+										name="user_email"
 										className="form-control"
 										placeholder="Your Email"
 										required
@@ -70,15 +69,17 @@ const Contact = () => {
 							<div className="mb-3">
 								<input
 									type="text"
+									name="user_phone"
 									className="form-control"
-									placeholder="phone"
+									placeholder="Phone"
 									required
 								/>
 							</div>
 							<div className="mb-3">
 								<textarea
+									name="user_message"
 									className="form-control"
-									rows="5"
+									rows={5}
 									placeholder="Your Message"
 									required
 								></textarea>
@@ -93,6 +94,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
+			<ToastContainer position="top-center" autoClose={3000} />
 		</section>
 	);
 };
