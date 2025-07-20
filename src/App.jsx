@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ScaleLoader } from 'react-spinners';
 import HomePage from './Pages/Home/HomePage';
-import './app.css';
+import './App.css';
 import 'animate.css';
 import WOW from 'wowjs';
 
