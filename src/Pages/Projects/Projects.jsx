@@ -2,37 +2,37 @@ const projects = [
 	{
 		title: 'brandah Website',
 		desc: 'Brandah Oman is your one-stop destination for booking unforgettable tours across Oman, offering hotel reservations, car rentals, and professional tour guidesEnjoy a seamless travel experience and discover the beauty of Oman with ease and convenience.',
-		img: './public/projects/brandah.jpg',
+		img: './projects/brandah.jpg',
 		link: 'https://brandah-om.com/en',
 	},
 	{
 		title: 'Tourism Touf W Shouf',
 		desc: 'Touf W Shouf is the official travel booking platform by Misr Travel, one of Egypt leadingtourism companies. The platform allows users to easily book hotel lodges, explore travel packages,and enjoy curated experiences across various destinations.',
-		img: './public/projects/touf.jpg',
+		img: './projects/touf.jpg',
 		link: 'https://www.toufwshouf.travel/home',
 	},
 	{
 		title: 'Landing Page bmp law',
 		desc: ' A specialized website for law firms, designed to manage case files, client information, and billing processes efficiently.',
-		img: './public/projects/bmp-law.png',
+		img: './projects/bmp-law.png',
 		link: 'https://bmp-law.vercel.app/',
 	},
 	{
 		title: 'Exodus',
 		desc: 'Exodus is a user-friendly travel booking platform that offers a wide range of tours and adventures across various destinations. Whether you are planning a relaxing getaway or an exciting journey, Exodus makes travel planning simple, convenient, and reliable.',
-		img: './public/projects/Exodus-2.jpg',
+		img: './projects/Exodus-2.jpg',
 		link: 'https://exodus-2.vercel.app/',
 	},
 	{
 		title: 'Exception Cafe',
 		desc: 'Exception Café is a stylish online menu platform showcasing a rich variety of hot and cold drinks, Eastern and Western desserts, and specialty café items. Explore the exceptional flavors and elegant offerings crafted to satisfy every taste.',
-		img: './public/projects/exception.jpg',
+		img: './projects/exception.jpg',
 		link: 'https://exception-cafe.vercel.app/',
 	},
 	{
 		title: 'swimming dashboard',
 		desc: 'Swimming is a comprehensive dashboard designed for managing swimming pool operations and reservations. It offers users a seamless booking experience',
-		img: './public/projects/swimming-dashboard.png',
+		img: './projects/swimming-dashboard.png',
 		link: 'https://swimming-dashboard-lake.vercel.app/',
 	},
 ];
