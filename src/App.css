@@ -1,0 +1,93 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #E7E0F6;
+    color: #1b0d35 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section-scroll-offset {
+    scroll-margin-top: 30px;
+}
+
+
+
+.who-we {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.719)), url(../public/about.jpg);
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.who-we .caption h2 {
+    font-size: 50px;
+    color: #fff;
+    font-family: cursive;
+}
+
+.who-we .caption p {
+    font-size: 25px;
+    width: 60%;
+    margin: auto;
+    font-family: cursive;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #fff;
+    width: 70%;
+    margin: auto;
+}
+
+.about-section .card {
+    transition: transform 0.3s ease;
+}
+
+.about-section .card:hover {
+    transform: translateY(-8px);
+}
+
+.project-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+@media(max-width:768px) {
+    .hero-section p {
+        text-align: center !important;
+    }
+
+    .hero-section-caption {
+        align-items: center !important;
+    }
+
+    .who-we {
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .who-we .caption h2 {
+        font-size: 30px;
+    }
+
+    .who-we .caption p {
+        font-size: 16px;
+        width: 90%;
+    }
+
+}
